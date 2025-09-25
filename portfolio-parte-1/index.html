@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guilherme - Portfólio Pessoal</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <!-- Font Awesome (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a class="brand" href="#">Guilherme Lourenço Nunes</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <a class="btn-CV" href="Currículo .pdf" target="_blank">Download CV</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Oi, eu sou o <span class="highlight">Guilherme</span></h1>
+          <p class="lead">Sou Programador Front-end iniciante — crio interfaces acessíveis e responsivas usando HTML e CSS.</p>
+          <p>Breve bio: Estudante de Engenharia da Computação na Universidade Santa Secilia, sou apaixonado por programação Back-end e Front-end, atualmente trabalho na area portuaria, mas o meu objetivo é conseguir algo na area da tecnologia.</p>
+          <div class="socials">
+            <!--Target=_blank esta fazendo com que abra o link em uma nova janela-->
+            <a href="https://github.com/nuneco24" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/guilherme-lourenço-nunes-65830b311" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+           <!--a função mailto esta transformando o meu e-mail pessoal em um link-->
+            <a href="mailto:guilhermelnunes61@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <img src="Unisanta.png" alt="Foto de perfil" />
+          <p class="small">Lista de skills adquiridas no tempo de curso na USC: HTML • CSS • Autodesk • GitHub • KiCad • TinkerCad</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Minhas Skills</h2>
+        <p class="section-intro">Algumas das tecnologias e ferramentas que estou aprendendo para aumentar meu conhecimento:</p>
+        <ul class="skills-list">
+          <li><i class="fab fa-html5"></i> HTML5</li>
+          <li><i class="fab fa-css3-alt"></i> CSS3</li>
+          <li><i class="fab fa-git-alt"></i> GitHub</li>
+          <li><i class="fas fa-mobile-alt"></i> Design Responsivo</li>
+          <li><i class="fab fa-python"></i> Python</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2>Projetos</h2>
+        <p class="section-intro">Aqui estão alguns projetos realizados na faculdade e outros pessoais (As imagens foram apenas ficticias, por falta de registro dos projetos). Clique para ver mais.</p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="Maquete residencial.jpg" alt="Miniatura do projeto 1">
+            <div class="card-body">
+              <h3>Projeto 1 — Maquete residencial</h3>
+              <p>Criação de uma maquete residencial feita de MDF com um circuito de iluminação interna. Tecnologias usadas : KiCad, Fusion, InovFab.</p>
+              <a class="btn-outline" href="Planta da Casa.pdf" target="_blank">Ver projeto</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="Ponte h.jpg" alt="Miniatura do projeto 2">
+            <div class="card-body">
+              <h3>Projeto 2 — Ponte H</h3>
+              <p>Projeção e criação de uma Placa PCB com um circuito de ponte H . Link para demo ou repositório.</p>
+              <a class="btn-outline" href="#">Ver projeto</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="Calu Beads.jpg" alt="Miniatura do projeto 3">
+            <div class="card-body">
+              <h3>Projeto 3 — Site da Calu Beads</h3>
+              <p>Site de uma loja virtual para venda de acessorios(Em desenvolvimento ainda). Estou tentando desenvolver minhas habilidades para programação WEB com este site.</p>
+              <a class="btn-outline" href="#">Ver projeto</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--Seção Contato -->
+    <section id="contato" class="section contact-section">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Quer trabalhar comigo? Preencha o formulário ou envie um e-mail.</p>
+
+        <div class="contact-grid">
+          <form class="contact-form" action="#" method="post">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+            <label for="email">E‑mail</label>
+            <input id="email" name="email" type="email" placeholder="Seu e-mail@exemplo.com" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+
+            <button class="btn-primary" type="submit">Enviar</button>
+          </form>
+
+          <aside class="contact-info">
+            <h3>Me encontre</h3>
+            <ul>
+              <li><strong>Email:</strong><a href="mailto:guilhermelnunes61@gmail.com" target="_blank"><span class="destaque">guilhermelnunes@gmail.com</a></span></li>
+              <li><strong>Local:</strong> Santos, SP</li>
+              <li><strong>Telefone:</strong><a href="https://wa.me/5513997006908"><span class="destaque">(13) 99700-6908</a></span></li>
+            </ul>
+
+            <p>Links rápidos:</p>
+            <ul>
+              <li><a href="https://github.com/nuneco24" target="_blank"><span class="destaque">GitHub</a></span></li>
+              <li><a href="https://www.linkedin.com/in/guilherme-lourenço-nunes-65830b311" target="_blank"><span class="destaque">LinkedIn</a></span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2025 Guilherme Lourenço Nunes — Desenvolvedor Front‑end</p>
+      <div class="footer-contact">
+        <ul>
+          <li><i class="fas fa-envelope"></i> guilhermelnunes61@gmail.com</li>
+          <li><i class="fas fa-phone"></i> (13) 99700-6908</li>
+          <li><i class="fas fa-map-marker-alt"></i> SAntos, SP</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
